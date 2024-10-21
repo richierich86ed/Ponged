@@ -47,5 +47,26 @@ class PongGame extends SurfaceView {
         // constructor of SurfaceView
         // provided by Android.
         super(context);
+
+        // Initialize these two members/fields
+        // With the values passed in as parameters
+        mScreenX = x;
+        mScreenY = y;
+
+        // Font is 5% (1/20th) of screen width
+        mFontSize = mScreenX / 20;
+        // Margin is 1.5% (1/75th) of screen width
+        mFontMargin = mScreenX / 75;
+
+        // Initialize the objects
+        // ready for drawing with
+        // getHolder is a method of SurfaceView
+        mOurHolder = getHolder();
+        mPaint = new Paint();
+
+        // Initialize the bat and ball
+
+        // Everything is ready so start the game
+        startNewGame();
     }
 }
