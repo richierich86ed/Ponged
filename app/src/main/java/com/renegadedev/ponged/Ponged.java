@@ -24,7 +24,7 @@ public class Ponged extends AppCompatActivity {
         Point size = new Point();
         display.getSize(size);
 
-        PongGame mPongGame = new PongGame(this, size.x, size.y);
+        mPongGame = new PongGame(this, size.x, size.y);
         setContentView(mPongGame);
 
         EdgeToEdge.enable(this);
