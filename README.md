@@ -1,0 +1,4 @@
+/*
+  This is a typical pong remake. I plan on making some twists to put my own personal spin on things. 
+  I will add more sections as it progresses.
+*/
